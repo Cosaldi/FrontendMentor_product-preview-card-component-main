@@ -1,0 +1,20 @@
+@font-face {
+    font-family: "Montserrat";
+    src: url("/assets/fonts/Montserrat-VariableFont_wght.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "Fraunces";
+    src: url("/assets/fonts/Fraunces-VariableFont_SOFT\,WONK\,opsz\,wght.ttf") format("truetype");
+}
+
+// Color
+// Primary
+$dark-cyan: hsl(158, 36%, 37%);
+$cream: hsl(30, 38%, 92%);
+
+//  Neutral
+
+$very-dark-blue: hsl(212, 21%, 14%);
+$dark-grayish-blue: hsl(228, 12%, 48%);
+$white: hsl(0, 0%, 100%);
