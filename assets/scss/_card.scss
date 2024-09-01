@@ -5,9 +5,17 @@
     border-radius: 0.875rem;
     overflow: hidden;
 
+    @include breakpoints-up(md) {
+        display: flex;
+        height: 450px;
+    }
+
     &__product {
         display: block;
-        margin-bottom: 1.625rem;
+
+        @include breakpoints-up(md) {
+            width: 50%;
+        }
         
         &-photo {
             display: block;
@@ -16,8 +24,13 @@
     }
 
     &__container {
-        padding: 0 1.5rem 1.5rem 1.5rem;
+        padding: 1.625rem 1.5rem 1.5rem;
         background-color: $white;
+
+        @include breakpoints-up(md) {
+            width: 50%;
+            padding: 2.125rem 2rem 2rem;
+        }
     }
 
     &__tag {
@@ -26,6 +39,10 @@
         font-size: $font-xs;
         font-weight: 500;
         letter-spacing: 0.3125rem;
+
+        // @include breakpoints-up(md) {
+        //     margin-bottom: 1.625rem;
+        // }
     }
 
     &__title {
@@ -34,6 +51,11 @@
         font-family: "Fraunces";
         font-size: $font-xl;
         font-weight: 700;
+        line-height: 1;
+
+        // @include breakpoints-up(md) {
+        //     margin-bottom: 2rem;
+        // }
     }
 
     &__desc {
@@ -42,10 +64,18 @@
         font-size: $font-s;
         font-weight: 500;
         line-height: 1.6;
+        
+        // @include breakpoints-up(md) {
+        //     margin-bottom: 2.25rem;
+        // }
     }
 
     &__price {
         margin-bottom: 1.25rem;
+
+        // @include breakpoints-up(md) {
+        //     margin-bottom: 2rem;
+        // }
 
         &--discount {
             margin-right: 1.25rem;
@@ -67,8 +97,8 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        padding-top: 1rem;
-        padding-bottom: 1rem;
+        padding-top: .875rem;
+        padding-bottom: .875rem;
         width: 100%;
         border-radius: 0.5rem;
         background-color: $dark-cyan;

@@ -13,6 +13,10 @@ body {
     height: 100dvh;
     background-color: $cream;
     font-family: "Montserrat";
+
+    @include landspace-down(md) {
+        height: 200dvh;
+    }
 }
 
 button {
