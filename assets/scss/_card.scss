@@ -5,7 +5,7 @@
     border-radius: 0.875rem;
     overflow: hidden;
 
-    @include breakpoints-up(md) {
+    @include breakpoints-up(sm) {
         display: flex;
         height: 450px;
     }
@@ -13,7 +13,7 @@
     &__product {
         display: block;
 
-        @include breakpoints-up(md) {
+        @include breakpoints-up(sm) {
             width: 50%;
         }
         
@@ -27,7 +27,7 @@
         padding: 1.625rem 1.5rem 1.5rem;
         background-color: $white;
 
-        @include breakpoints-up(md) {
+        @include breakpoints-up(sm) {
             width: 50%;
             padding: 2.125rem 2rem 2rem;
         }
