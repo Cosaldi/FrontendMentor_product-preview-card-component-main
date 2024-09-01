@@ -1,0 +1,133 @@
+@font-face {
+  font-family: "Montserrat";
+  src: url("/assets/fonts/Montserrat-VariableFont_wght.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Fraunces";
+  src: url("/assets/fonts/Fraunces-VariableFont_SOFT,WONK,opsz,wght.ttf") format("truetype");
+}
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100dvh;
+  background-color: hsl(30, 38%, 92%);
+  font-family: "Montserrat";
+}
+@media (max-height: 48em) {
+  body {
+    height: 200dvh;
+  }
+}
+
+button {
+  padding: 0;
+  border: none;
+  cursor: pointer;
+}
+
+.card {
+  max-width: 37.5rem;
+  margin: 1rem;
+  background-color: hsl(0, 0%, 100%);
+  border-radius: 0.875rem;
+  overflow: hidden;
+}
+@media (min-width: 48em) {
+  .card {
+    display: flex;
+    height: 450px;
+  }
+}
+.card__product {
+  display: block;
+}
+@media (min-width: 48em) {
+  .card__product {
+    width: 50%;
+  }
+}
+.card__product-photo {
+  display: block;
+  width: 100%;
+}
+.card__container {
+  padding: 1.625rem 1.5rem 1.5rem;
+  background-color: hsl(0, 0%, 100%);
+}
+@media (min-width: 48em) {
+  .card__container {
+    width: 50%;
+    padding: 2.125rem 2rem 2rem;
+  }
+}
+.card__tag {
+  margin-bottom: 1.125rem;
+  color: hsl(228, 12%, 48%);
+  font-size: 0.75rem;
+  font-weight: 500;
+  letter-spacing: 0.3125rem;
+}
+.card__title {
+  margin-bottom: 1.125rem;
+  color: hsl(212, 21%, 14%);
+  font-family: "Fraunces";
+  font-size: 2.125rem;
+  font-weight: 700;
+  line-height: 1;
+}
+.card__desc {
+  margin-bottom: 2rem;
+  color: hsl(228, 12%, 48%);
+  font-size: 0.875rem;
+  font-weight: 500;
+  line-height: 1.6;
+}
+.card__price {
+  margin-bottom: 1.25rem;
+}
+.card__price--discount {
+  margin-right: 1.25rem;
+  color: hsl(158, 36%, 37%);
+  font-family: "Fraunces";
+  font-size: 2rem;
+  font-weight: 700;
+}
+.card__price--add {
+  color: hsl(228, 12%, 48%);
+  font-size: 0.875rem;
+  font-weight: 500;
+  text-decoration-line: line-through;
+}
+.card__button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 0.875rem;
+  padding-bottom: 0.875rem;
+  width: 100%;
+  border-radius: 0.5rem;
+  background-color: hsl(158, 36%, 37%);
+  text-align: center;
+  transition: 0.3s;
+}
+.card__button-icon {
+  margin-right: 0.625rem;
+}
+.card__button-text {
+  display: block;
+  padding-top: 0.25rem;
+  color: hsl(0, 0%, 100%);
+  font-size: 0.875rem;
+  font-weight: 700;
+}
+.card__button:hover {
+  background-color: hsl(212, 21%, 14%);
+}/*# sourceMappingURL=style.css.map */
