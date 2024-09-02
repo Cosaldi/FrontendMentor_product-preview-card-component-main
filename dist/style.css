@@ -58,6 +58,13 @@ button {
   display: block;
   width: 100%;
 }
+@media (min-width: 36em) {
+  .card__product-photo {
+    height: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+}
 .card__container {
   padding: 1.625rem 1.5rem 1.5rem;
   background-color: hsl(0, 0%, 100%);
